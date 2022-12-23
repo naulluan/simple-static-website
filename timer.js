@@ -59,5 +59,5 @@ function calculateFutureDate (dateTochange){
 }
 // liveStream function changes the webpage to the webpage where the live stream is hosted
 function liveStream (){
-	window.location.assign("http://www.clcconthemove.org/clccLivestream.html");
+	window.location.assign("https://www.google.com.vn");
 }
