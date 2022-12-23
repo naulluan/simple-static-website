@@ -1,13 +1,79 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloudflare Pages Demo</title>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #eee;
+    }
+    .login-form {
+      width: 300px;
+      margin: 100px auto;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    .login-form h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .login-form .form-control {
+      display: block;
+      width: 100%;
+      height: 38px;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      color: #555;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+      transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    }
+    .login-form .form-control:focus {
+      border-color: #66afe9;
+      outline: 0;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    }
+    .login-form .btn {
+      display: block;
+      width: 100%;
+      height: 38px;
+      padding: 6px 12px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.42857143;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      touch-action: manipulation;
+      cursor: pointer;
+      user-select: none;
+      background-image: none;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      color: white;
+      background-color: #337ab7;
+      border-color: #2e6da4;
+    }
+    .login-form .btn:hover,
+    .login-form .btn:focus {
+      color: white;
+      background-color: #286090;
+      border-color: #204d74;
+    }
+  </style>
 </head>
 <body>
-    <h1>Forget about the DevSecOps, now ClickOps !!!</h1>
+  <form class="login-form">
+    <h1>Login</h1>
+    <input type="text" class="form-control" placeholder="Username" required>
+    <input type="password" class="form-control" placeholder="Password" required>
+    <button type="submit" class="btn">Log in</button>
+  </form>
 </body>
 </html>
